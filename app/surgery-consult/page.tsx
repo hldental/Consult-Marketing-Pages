@@ -12,17 +12,17 @@ const questions = [
 ];
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
-  return <p className="text-xs font-semibold uppercase tracking-[0.28em] text-amber-600/80">{children}</p>;
+  return <p className="text-xs font-semibold uppercase tracking-[0.28em] text-orange-400/80">{children}</p>;
 }
 
 function Card({ children, className = "" }: { children: React.ReactNode; className?: string }) {
-  return <div className={`rounded-3xl border border-stone-200 bg-white shadow-xl ${className}`}>{children}</div>;
+  return <div className={`rounded-3xl border border-zinc-700 bg-zinc-900 shadow-xl ${className}`}>{children}</div>;
 }
 
 export default function SurgeryProstheticConsultLandingPage() {
   return (
-    <main className="min-h-screen bg-stone-50 text-stone-900">
-      <section className="border-b border-stone-200 bg-gradient-to-b from-stone-100 to-white">
+    <main className="min-h-screen bg-black text-white">
+      <section className="border-b border-zinc-700 bg-gradient-to-b from-stone-100 to-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
           <div className="max-w-3xl">
             <div className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-amber-700">
@@ -31,14 +31,14 @@ export default function SurgeryProstheticConsultLandingPage() {
             <h1 className="mt-8 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
               Missing teeth, failing teeth, or wondering if full-arch is right for you?
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-700">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
               Answer a few quick questions so our team can understand your situation and call you to discuss whether a surgery/prosthetic consultation is the right next step.
             </p>
-            <p className="mt-4 max-w-2xl text-lg leading-8 text-stone-700">
+            <p className="mt-4 max-w-2xl text-lg leading-8 text-zinc-300">
               This page is designed for patients exploring implants, dentures, extractions, full-arch replacement, or larger restorative solutions.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a href="#consult-form" className="rounded-2xl bg-stone-900 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5">
+              <a href="#consult-form" className="rounded-2xl bg-orange-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5">
                 Answer the Questions
               </a>
             </div>
@@ -46,9 +46,9 @@ export default function SurgeryProstheticConsultLandingPage() {
           <Card className="p-8 lg:p-10">
             <SectionLabel>What happens next</SectionLabel>
             <div className="mt-5 space-y-5">
-              <div><p className="text-sm font-semibold text-stone-900">1. Complete the short form</p><p className="mt-1 text-sm leading-6 text-stone-600">Tell us about missing teeth, full-arch interest, and budget range.</p></div>
-              <div><p className="text-sm font-semibold text-stone-900">2. We review your answers</p><p className="mt-1 text-sm leading-6 text-stone-600">Our team looks at your goals and helps determine the right next step.</p></div>
-              <div><p className="text-sm font-semibold text-stone-900">3. We call you</p><p className="mt-1 text-sm leading-6 text-stone-600">If it looks like a fit, we will contact you to schedule your consultation.</p></div>
+              <div><p className="text-sm font-semibold text-white">1. Complete the short form</p><p className="mt-1 text-sm leading-6 text-stone-600">Tell us about missing teeth, full-arch interest, and budget range.</p></div>
+              <div><p className="text-sm font-semibold text-white">2. We review your answers</p><p className="mt-1 text-sm leading-6 text-stone-600">Our team looks at your goals and helps determine the right next step.</p></div>
+              <div><p className="text-sm font-semibold text-white">3. We call you</p><p className="mt-1 text-sm leading-6 text-stone-600">If it looks like a fit, we will contact you to schedule your consultation.</p></div>
             </div>
           </Card>
         </div>
@@ -59,22 +59,22 @@ export default function SurgeryProstheticConsultLandingPage() {
           <Card className="p-8 lg:p-10">
             <SectionLabel>Who this page is for</SectionLabel>
             <h2 className="mt-4 text-2xl font-bold">A simple first step for bigger treatment conversations.</h2>
-            <p className="mt-4 text-base leading-7 text-stone-700">This page is intended for patients who may need advanced tooth replacement or surgical care and want to know what options may be available.</p>
+            <p className="mt-4 text-base leading-7 text-zinc-300">This page is intended for patients who may need advanced tooth replacement or surgical care and want to know what options may be available.</p>
           </Card>
 
           <Card className="p-8 lg:p-10">
             <SectionLabel>Request a call</SectionLabel>
             <h2 className="mt-4 text-2xl font-bold">Answer a few questions below.</h2>
-            <p className="mt-4 max-w-2xl text-base leading-7 text-stone-700">If it looks like you may be a fit for our surgery/prosthetic clinic, our team will call you to discuss your options and schedule your consultation.</p>
+            <p className="mt-4 max-w-2xl text-base leading-7 text-zinc-300">If it looks like you may be a fit for our surgery/prosthetic clinic, our team will call you to discuss your options and schedule your consultation.</p>
 
-            <form className="mt-8 grid gap-6" action="https://formspree.io/f/REPLACE_WITH_SURGERY_FORM_ID" method="POST">
+            <form className="mt-8 grid gap-6" action="https://formspree.io/f/mqegnjvg
               <div className="grid gap-6">
                 {questions.map((question, index) => (
-                  <div key={question} className="rounded-2xl border border-stone-200 p-5">
-                    <p className="text-sm font-semibold text-stone-900">{index + 1}. {question}</p>
+                  <div key={question} className="rounded-2xl border border-zinc-700 p-5">
+                    <p className="text-sm font-semibold text-white">{index + 1}. {question}</p>
                     <div className="mt-4 flex gap-6">
-                      <label className="flex items-center gap-2 text-sm text-stone-700"><input type="radio" name={`q${index + 1}`} value="Yes" required /> Yes</label>
-                      <label className="flex items-center gap-2 text-sm text-stone-700"><input type="radio" name={`q${index + 1}`} value="No" required /> No</label>
+                      <label className="flex items-center gap-2 text-sm text-zinc-300"><input type="radio" name={`q${index + 1}`} value="Yes" required /> Yes</label>
+                      <label className="flex items-center gap-2 text-sm text-zinc-300"><input type="radio" name={`q${index + 1}`} value="No" required /> No</label>
                     </div>
                   </div>
                 ))}
@@ -119,7 +119,7 @@ export default function SurgeryProstheticConsultLandingPage() {
                 <textarea name="notes" rows={4} className="rounded-2xl border border-stone-300 px-4 py-3 outline-none transition focus:border-stone-500" placeholder="Optional" />
               </label>
 
-              <button type="submit" className="rounded-2xl bg-stone-900 px-6 py-4 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5">
+              <button type="submit" className="rounded-2xl bg-orange-500 px-6 py-4 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5">
                 Request My Consultation Call
               </button>
             </form>
