@@ -13,7 +13,6 @@ const questions = [
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return <p className="text-xs font-semibold uppercase tracking-[0.28em] text-orange-400/80">{children}</p>;
-}https://formspree.io/f/mykbovqo
 
 function Card({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return <div className={`rounded-3xl border border-zinc-700 bg-zinc-900 shadow-xl ${className}`}>{children}</div>;
