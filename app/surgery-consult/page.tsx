@@ -67,7 +67,7 @@ export default function SurgeryProstheticConsultLandingPage() {
             <h2 className="mt-4 text-2xl font-bold">Answer a few questions below.</h2>
             <p className="mt-4 max-w-2xl text-base leading-7 text-zinc-300">If it looks like you may be a fit for our surgery/prosthetic clinic, our team will call you to discuss your options and schedule your consultation.</p>
 
-            <form className="mt-8 grid gap-6" action="https://formspree.io/f/mqegnjvg
+             <form className="mt-8 grid gap-6" action="https://formspree.io/f/YOUR_ID" method="POST">
               <div className="grid gap-6">
                 {questions.map((question, index) => (
                   <div key={question} className="rounded-2xl border border-zinc-700 p-5">
