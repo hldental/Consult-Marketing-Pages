@@ -66,7 +66,7 @@ export default function GeneralClinicConsultLandingPage() {
             <h2 className="mt-4 text-2xl font-bold">Answer a few questions below.</h2>
             <p className="mt-4 max-w-2xl text-base leading-7 text-stone-700">If it looks like general care is the right place to start, our team will call you to discuss your situation and help schedule your visit.</p>
 
-            <form className="mt-8 grid gap-6" action="https://formspree.io/f/REPLACE_WITH_GENERAL_FORM_ID" method="POST">
+            <form className="mt-8 grid gap-6" action="https://formspree.io/f/YOUR_ID" method="POST">
               <div className="grid gap-6">
                 {questions.map((question, index) => (
                   <div key={question} className="rounded-2xl border border-stone-200 p-5">
